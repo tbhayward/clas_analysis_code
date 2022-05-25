@@ -10,12 +10,12 @@ Thesis: https://www.jlab.org/Hall-B/general/thesis/THayward_thesis.pdf
 Letter: https://arxiv.org/abs/2101.04842 
 
 included files:  
-I. **analysis_fitter.java** 
-  This is the class for the kinematic fitter I use to build events (takes the detector responses to assign particle ID to tracks and adds them to the event). The idea is to take the CLAS12 EventBuilder as a basis and enhance the PID on top of that. Loops through all particles in REC::Particle bank and sees if they pass the enhanced particle PID cuts (e.g. tightened sampling fraction, fiducial cuts, chi2pid cuts for hadron identification etc.) Start reading around line 700,  
+I. **analysis_fitter.java**  
+   This is the class for the kinematic fitter I use to build events (takes the detector responses to assign particle ID to tracks and adds them to the event). The idea is to take the CLAS12 EventBuilder as a basis and enhance the PID on top of that. Loops through all particles in REC::Particle bank and sees if they pass the enhanced particle PID cuts (e.g. tightened sampling fraction, fiducial cuts, chi2pid cuts for hadron identification etc.) Start reading around line 700,  
   "public PhysicsEvent getPhysicsEvent(DataEvent event) {"
   
-II. **hadron.java** 
-  This is the class used to calculate relevant kinematic variables (Q2, W, Mx, xF, PT, phi_trento, etc.)  for ep -> e'hX events (single hadron SIDIS). Includes a section (commented out by default to increase computation speed) for the printing of revelant RICH variables for hadron PID studies. If no track is present in the RICH (which only exists in one sector; second sector installed for RGC forward) then it prints PID = 0.
+II. **hadron.java**  
+   This is the class used to calculate relevant kinematic variables (Q2, W, Mx, xF, PT, phi_trento, etc.)  for ep -> e'hX events (single hadron SIDIS). Includes a section (commented out by default to increase computation speed) for the printing of revelant RICH variables for hadron PID studies. If no track is present in the RICH (which only exists in one sector; second sector installed for RGC forward) then it prints PID = 0.
 IIb. dihadron.java
   Extension (technically written first) of the single hadron case to two hadrons, ep -> e' h1 h2 X, includes additional variables for each hadron, e.g. z1, z2, PT1, PT2, etc.
   
