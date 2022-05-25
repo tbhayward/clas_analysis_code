@@ -5,10 +5,13 @@
 repository for various analysis codes (EventBuilder, fitters, etc.) used for analyzing CLAS12 data at Jefferson Lab. Primarily SIDIS focused.
 
 
-Timothy Hayward's
+Timothy Hayward's 
 Thesis: https://www.jlab.org/Hall-B/general/thesis/THayward_thesis.pdf
 Letter: https://arxiv.org/abs/2101.04842
 
+Description of the java code used by Timothy Hayward for the RGA first experiment dihadron analysis.
+Thesis: https://www.jlab.org/Hall-B/general/thesis/THayward_thesis.pdf
+Letter: https://arxiv.org/abs/2101.04842
 
 included files: 
 - I. analysis_fitter.java
