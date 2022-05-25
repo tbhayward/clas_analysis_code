@@ -5,16 +5,13 @@
 repository for various analysis codes (EventBuilder, fitters, etc.) used for analyzing CLAS12 data at Jefferson Lab. Primarily SIDIS focused. 
 
 
-Timothy Hayward's 
-
+Timothy Hayward's  
 Thesis: https://www.jlab.org/Hall-B/general/thesis/THayward_thesis.pdf  
 Letter: https://arxiv.org/abs/2101.04842 
 
-included files: 
-- I. analysis_fitter.java
-  This is the class for the kinematic fitter I use to build events (takes the detector responses to assign particle ID to tracks and adds them to the event). 
-  The idea is to take the CLAS12 EventBuilder as a basis and enhance the PID on top of that.
-  Loops through all particles in REC::Particle bank and sees if they pass the enhanced particle PID cuts (e.g. tightened sampling fraction, fiducial cuts, chi2pid cuts for hadron identification etc.)
+included files:  
+I. analysis_fitter.java  
+  This is the class for the kinematic fitter I use to build events (takes the detector responses to assign particle ID to tracks and adds them to the event). The idea is   to take the CLAS12 EventBuilder as a basis and enhance the PID on top of that. Loops through all particles in REC::Particle bank and sees if they pass the enhanced       particle PID cuts (e.g. tightened sampling fraction, fiducial cuts, chi2pid cuts for hadron identification etc.)  
   Start reading around line 700, "public PhysicsEvent getPhysicsEvent(DataEvent event) {"
  
   
