@@ -7,8 +7,7 @@ repository for various analysis codes (EventBuilder, fitters, etc.) used for ana
 
 Timothy Hayward's 
 
-Thesis: https://www.jlab.org/Hall-B/general/thesis/THayward_thesis.pdf 
-
+Thesis: https://www.jlab.org/Hall-B/general/thesis/THayward_thesis.pdf  
 Letter: https://arxiv.org/abs/2101.04842 
 
 included files: 
