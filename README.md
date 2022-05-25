@@ -43,3 +43,9 @@ IVb. **processing_dihadrons.groovy**
   3. pid for p2 (hadron 2), i.e. -211 for pi-
   4. output text file name  
   5. number of files to process in the directory
+
+V. **processing_mc_single_hadrons.groovy**
+&nbsp;&nbsp;&nbsp;same as **processing_single_hadrons.groovy** except for the use with MC. Places generated and reconstructed values next to each other, i.e. rec_Q2 - gen_Q2. For studies of various systematics like bin migration.
+
+Vb. **processing_mc_dihadrons.groovy**
+&nbsp;&nbsp;&nbsp;same as **processing_dihadrons.groovy** except for the use with MC.
