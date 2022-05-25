@@ -3,11 +3,14 @@
 ** analysis codes for CLAS12 SIDIS analyses
 **/
 
+
 repository for various analysis codes (EventBuilder, fitters, etc.) used for analyzing CLAS12 data at Jefferson Lab. Primarily SIDIS focused.
+
 
 Timothy Hayward's
 Thesis: https://www.jlab.org/Hall-B/general/thesis/THayward_thesis.pdf
 Letter: https://arxiv.org/abs/2101.04842
+
 
 included files: 
 I. analysis_fitter.java
@@ -23,6 +26,7 @@ IIb. dihadron.java
   Extension (technically written first) of the single hadron case to two hadrons, ep -> e' h1 h2 X, includes additional variables for each hadron, e.g. z1, z2, PT1, PT2, etc.
   
   Both classes start with a "channel_test" function that allows for cuts on Q2, W, xF, y, Mx, etc. By default Q2 > 1, W > 2, y < 0.8 are enabled and the others are commented out. If you are sure of the cuts you desire, more can be turned on to significantly increase processing speed.
+  
   
 III. hayward_coatjava_extensions.jar
   The distribution version of all my classes if you want to just try running the code as is first. You'll need this one in your 
