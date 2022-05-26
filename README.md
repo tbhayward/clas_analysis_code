@@ -49,3 +49,11 @@ V. **processing_mc_single_hadrons.groovy**
 
 Vb. **processing_mc_dihadrons.groovy**
 &nbsp;&nbsp;&nbsp;same as **processing_dihadrons.groovy** except for the use with MC.
+
+
+
+
+
+
+The processing scripts (at least for data) rely on the [CLAS12 Quality Assurance](https://github.com/JeffersonLab/clasqaDB) code (developed by Christopher Dilks). You can do a git pull on it and source the following file before running my scripts. At the moment we rely on the QA cut "OkForAsymmetry" which is defined in the QA readme.  
+> source clasqaDB/env.csh 
