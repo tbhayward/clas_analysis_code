@@ -4,6 +4,8 @@
 
 repository for various analysis codes (EventBuilder, fitters, etc.) used for analyzing CLAS12 data at Jefferson Lab. Primarily SIDIS focused. 
 
+A directory with myClara installation (with my coatjava extensions already in the correct directory), the clasQA and the below example scripts can be found on ifarm at  
+> /work/clas12/thayward/analysis_tools/ 
 
 Timothy Hayward's  
 [Thesis](https://www.jlab.org/Hall-B/general/thesis/THayward_thesis.pdf )  
