@@ -92,8 +92,13 @@ public class processing_dihadrons {
 
 		int hadron_pair_counts = 0;
 		GenericKinematicFitter research_fitter = new analysis_fitter(10.6041); // load my kinematic fitter/PID
+		// GenericKinematicFitter research_fitter = new proton_energy_loss_corrections_fitter(10.6041);
+		// GenericKinematicFitter research_fitter = new b2b_PRD_fitter(10.6041); // load my kinematic fitter/PID
 		// GenericKinematicFitter research_fitter = new event_builder_fitter(10.6041); // load my kinematic fitter/PID
 		EventFilter filter = new EventFilter("11:"+p1_Str+":"+p2_Str+":X+:X-:Xn"); // set filter for final states
+		
+		// System.console('source /work/clas12/thayward/analysis_tools/clasqaDB/env.csh');
+
 		// setup QA database
 		QADB qa = new QADB();
 
@@ -113,8 +118,9 @@ public class processing_dihadrons {
 
 			while(reader.hasEvent()==true){
 				num_events++; 
-				if (num_events%1000000 == 0) { // not necessary
-					print("processed: "+num_events+" events. ");
+				if (num_events%5000 == 0) { // not necessary
+					print("Processed: "+num_events+" events. On file "+Integer.toString(current_file)
+					+" out of "+n_files+". ");
 				}
 
 				// get run and event numbers
@@ -125,7 +131,7 @@ public class processing_dihadrons {
 			    PhysicsEvent research_Event = research_fitter.getPhysicsEvent(event);
 
 			    boolean process_event = false;
-			    if (runnum == 11) { // if run number = 11 then it is MC and we don't use QA
+			    if (runnum == 11 || runnum >= 11571) { // if run number = 11 then it is MC and we don't use QA
 			    	process_event = filter.isValid(research_Event);
 			    } else {
 			    	process_event = (filter.isValid(research_Event) && qa.OkForAsymmetry(runnum,evnum));
