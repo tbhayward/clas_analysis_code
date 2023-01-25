@@ -1,5 +1,5 @@
 # analysis codes for CLAS12 SIDIS analyses
-## Tmothy B. Hayward, last updated May 25, 2022
+## Tmothy B. Hayward, last updated January 25, 2023
 
 
 repository for various analysis codes (EventBuilder, fitters, etc.) used for analyzing CLAS12 data at Jefferson Lab. Primarily SIDIS focused. 
