@@ -345,7 +345,7 @@ public class processing_single_hadrons_RICH_studies {
 
 					for (int current_p1 = 0; current_p1 < num_p1; current_p1++) { // cycle over all combinations
 
-						Hadron variables = new Hadron(event, research_Event, 
+						Hadron_RICH_studies variables = new Hadron_RICH_studies(event, research_Event, 
 							p1_Str.toInteger(), current_p1);
 						// this is my class for defining all relevant kinematic variables
 
