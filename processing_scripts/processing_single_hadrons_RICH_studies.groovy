@@ -393,6 +393,7 @@ public class processing_single_hadrons_RICH_studies {
 
 							double RQ_prob = variables.RQ_prob();
 							double ReQ_prob = variables.ReQ_prob();
+							double el_prob = variables.el_prob();
 							double pi_prob = variables.pi_prob();
 							double k_prob = variables.k_prob();
 							double pr_prob = variables.pr_prob();
