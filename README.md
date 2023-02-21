@@ -1,5 +1,5 @@
 # analysis codes for CLAS12 SIDIS analyses
-## Tmothy B. Hayward, last updated January 25, 2023
+## Tmothy B. Hayward, last updated February 21, 2023
 
 
 repository for various analysis codes (EventBuilder, fitters, etc.) used for analyzing CLAS12 data at Jefferson Lab. Primarily SIDIS focused. 
@@ -61,6 +61,9 @@ V. **processing_mc_single_hadrons.groovy**
 
 Vb. **processing_mc_dihadrons.groovy**
 &nbsp;&nbsp;&nbsp;same as **processing_dihadrons.groovy** except for the use with MC.
+
+VI. **processing_beamCharge.groovy**
+&nbsp;&nbsp;&nbsp; reports total accumulated charge per run and charge for each beam helicity state.
 
 I have also included processing scripts for the inclusive and trihadron case which should be self explanatory; the descriptions of each column can be found at the end of the groovy scripts. 
 
