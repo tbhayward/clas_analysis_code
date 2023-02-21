@@ -13,9 +13,6 @@ import org.jlab.clas12.physics.*;
 import extended_kinematic_fitters.*; 
 import analyzers.*;
 
-// dilks CLAS QA analysis
-import clasqa.QADB
-
 // filetype for gathering files in directory
 import groovy.io.FileType;
 
@@ -73,13 +70,11 @@ public class processing_beamCharge {
 			current_file++;
 			HipoDataEvent event = reader.getNextEvent(); 
 
-			double charge_for_positive_helicities, charge_for_negative_helicities;
-			double charge_for_run;
 			while(reader.hasEvent()==true){
 				num_events++; 
 				if (num_events%1000000 == 0) { // not necessary, just updates output
 					print("processed: "+num_events+" events, max beamCharge of current ");
-					print("run = "+beamChargeMax+".\n");
+					print("run = "+beamChargeMax+" nC.\n");
 				}
 
 				if (event.hasBank("RUN::scaler")) {
